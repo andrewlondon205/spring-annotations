@@ -1,0 +1,1 @@
+SQL,Java,C++,Python,Android,Javascript,React,Angular,SpringBoot,Assembly,Fortran,Flask,DJango

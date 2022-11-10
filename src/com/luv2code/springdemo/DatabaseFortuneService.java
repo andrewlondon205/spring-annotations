@@ -5,10 +5,10 @@ import org.springframework.stereotype.Component;
 import java.io.IOException;
 
 @Component
-public class HappyFortuneService implements FortuneService{
+public class DatabaseFortuneService implements FortuneService{
     @Override
     public String getFortune() {
-        return "Today is your lucky day";
+        return "SQL Database";
     }
 
 }
