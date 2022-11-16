@@ -2,6 +2,7 @@ package com.luv2code.springdemo;
 
 import org.springframework.stereotype.Component;
 
+import javax.annotation.PostConstruct;
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
@@ -14,8 +15,10 @@ import java.util.Random;
 public class CompScienceFortuneService implements FortuneService {
 
     private List<String> items = new ArrayList<>();
-
+    @PostConstruct
     public String getRandomFortune() throws IOException {
+
+        System.out.println("Inside the GetRandomFortune annotated with @PostConstruct");
 
         Path content = Path.of("words.txt");
         String words = Files.readString(content);
