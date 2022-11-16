@@ -11,7 +11,6 @@ import java.util.List;
 import java.util.Random;
 
 @Component
-
 public class CompScienceFortuneService implements FortuneService {
 
     private List<String> items = new ArrayList<>();
